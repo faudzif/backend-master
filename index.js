@@ -4,6 +4,7 @@ import path from 'path';
 const app = express();
 
 /* Middleware */
+app.use(express.static(path.join(path.resolve(), "public")))
 
 /* Setting up the view engine */
 app.set("view engine", "ejs")
